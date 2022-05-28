@@ -1,12 +1,9 @@
 package salestax.salestax;
 
-import java.util.ArrayList;
-
 public class product {
 
     private String productName;
     private int quantity;
-    private double total;
     private double productPrice;
     private productType type;
     private boolean isImported;
@@ -84,21 +81,11 @@ public class product {
     public void setPerfume(boolean perfume) {
         isPerfume = perfume;
     }
-
-    public double getTotal() {
-        return total;
-    }
-
-    public void setTotal(double total) {
-        this.total = total;
-    }
-
     @Override
     public String toString() {
         return "product{" +
                 "productName='" + productName + '\'' +
                 ", quantity=" + quantity +
-                ", total=" + total +
                 ", productPrice=" + productPrice +
                 ", type=" + type +
                 ", salesTax=" + salesTax +
